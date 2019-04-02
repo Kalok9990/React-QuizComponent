@@ -11,7 +11,7 @@ class Quiz extends Component{
     }
 
     showNextQuestion() {
-        this.UNSAFE_componentWillMount.setState((state) => {
+        this.setState((state) => {
             return{quiz_position: state.quiz_position + 1}
         })
     }
